@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анкета опекуна — Приют «Верный друг»</title>
+</head>
+<body>
+
+<header>
+    <h1>Приют для животных «Верный друг»</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Питомцы</a></li>
+            <li><a href="detail.html">Карточка питомца</a></li>
+            <li><a href="collection.html">Хочу забрать</a></li>
+            <li><a href="checkout.html">Анкета опекуна</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Анкета опекуна</h2>
+        <p>Заполните форму, чтобы забрать питомца. Поля со звёздочкой (*) обязательные.</p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Контактные данные</legend>
+
+                <p>
+                    <label for="fio">ФИО *</label><br>
+                    <input type="text" id="fio" name="fio" required minlength="3"
+                           maxlength="100" size="40">
+                </p>
+
+                <p>
+                    <label for="tel">Телефон *</label><br>
+                    <input type="tel" id="tel" name="telefon" required
+                           pattern="\+7[0-9]{10}" placeholder="+79991234567">
+                </p>
+
+                <p>
+                    <label for="mail">Email *</label><br>
+                    <input type="email" id="mail" name="email" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Условия содержания</legend>
+
+                <p>
+                    <label>Наличие своей жилплощади *</label><br>
+
+                    <input type="radio" id="svoe" name="jilye" value="svoe" required>
+                    <label for="svoe">Своё жильё</label><br>
+
+                    <input type="radio" id="arenda" name="jilye" value="arenda">
+                    <label for="arenda">Арендованное</label><br>
+
+                    <input type="radio" id="net" name="jilye" value="net">
+                    <label for="net">Нет постоянного</label>
+                </p>
+
+                <p>
+                    <label for="jivotnye">Есть ли другие животные?</label><br>
+                    <select id="jivotnye" name="drugie_jivotnye">
+                        <option value="net">Нет</option>
+                        <option value="koshka">Есть кошка</option>
+                        <option value="sobaka">Есть собака</option>
+                        <option value="oba">И кошка и собака</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Опыт и пожелания</legend>
+
+                <p>
+                    <label for="opyt">Опишите ваш опыт содержания животных *</label><br>
+                    <textarea id="opyt" name="opyt" rows="5" cols="50" required minlength="20"
+                              placeholder="Lorem ipsum dolor sit amet..."></textarea>
+                </p>
+
+                <p>
+                    <label for="pitomec">Какого питомца хотите?</label><br>
+                    <select id="pitomec" name="pitomec">
+                        <option value="murka">Мурка (кошка)</option>
+                        <option value="barsik">Барсик (кот)</option>
+                        <option value="rex">Рекс (собака)</option>
+                        <option value="belka">Белка (собака)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="data">Дата визита в приют</label><br>
+                    <input type="date" id="data" name="data_vizita" min="2026-01-01">
+                </p>
+
+                <p>
+                    <input type="checkbox" id="soglasie" name="soglasie" required>
+                    <label for="soglasie">Я согласен(на) с правилами приюта
+                        и обработкой персональных данных *</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Отправить анкету</button>
+                <button type="reset">Очистить</button>
+            </p>
+
+        </form>
+    </section>
+
+    <aside>
+        <h3>Что дальше?</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            После отправки анкеты с вами свяжется куратор в течение двух рабочих дней.
+            Решение принимается после личного знакомства с животным.
+        </p>
+    </aside>
+
+</main>
+
+<footer>
+    <p>&copy; <time datetime="2026">2026</time> Приют «Верный друг». Все права защищены.</p>
+    <address>
+        Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+        Почта: <a href="mailto:info@verny-drug.ru">info@verny-drug.ru</a>
+    </address>
+</footer>
+
+</body>
+</html>
